@@ -1,0 +1,15 @@
+package firstApp;
+
+import javax.servlet.annotation.WebInitParam;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet(value ="/bye", loadOnStartup =9,
+initParams = {
+		@WebInitParam(name="color", value="pink"),
+		@WebInitParam(name="course", value="DAC")
+})
+public class SecondServlet extends HttpServlet {
+private String color = "";
+
+}
