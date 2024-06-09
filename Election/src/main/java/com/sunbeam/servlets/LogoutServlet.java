@@ -2,8 +2,9 @@
   
   import java.io.IOException;
   import java.io.PrintWriter;
-  
-  import javax.servlet.ServletException;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
   import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
@@ -32,6 +33,10 @@ import com.sunbeam.daos.CandidateDao;
   		out.println("<title>Logout</title>");
   		out.println("</head>");
   		out.println("<body>");
+  		
+  		ServletContext app = this.getServletContext();
+			String appTitle = app.getInitParameter("AppTitle");
+			out.printf("<h3>%s</h3>", appTitle);
   		
   		String userName = "";
   		Cookie[] arr = req.getCookies();

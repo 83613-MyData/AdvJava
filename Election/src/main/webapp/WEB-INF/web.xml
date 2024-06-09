@@ -43,5 +43,25 @@
     <servlet-mapping>
     	<servlet-name>Logout</servlet-name>
     	<url-pattern>/logout</url-pattern>
-    </servlet-mapping> 
+    </servlet-mapping>
+    
+    <servlet>
+    	<servlet-name>Result</servlet-name>
+    	<servlet-class>com.sunbeam.servlets.ResultServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>Result</servlet-name>
+    	<url-pattern>/result</url-pattern>
+    </servlet-mapping>
+     
+     <context-param>
+    		<param-name>AppTitle</param-name>
+    		<param-value>Bharat - Online Voting</param-value>
+  	</context-param>
+     
+    <session-config>
+    <tracking-mode>COOKIE</tracking-mode>
+    </session-config>
+    
+    
 </web-app>
