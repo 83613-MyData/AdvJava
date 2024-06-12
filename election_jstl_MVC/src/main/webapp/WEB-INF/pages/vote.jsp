@@ -21,14 +21,16 @@ ${vb.registerVote()}
 		Voted Successfully.... Thank you
 		<br/>
 		<hr/>
-			<a href="logout.jsp">Logout</a>
+			<%--<a href="logout.jsp">Logout</a> --%>
+			<a href="ctl?page=logout">Logout</a>
 		
 	</c:when>
 	
 	<c:otherwise>
 		
 		Voting is failed<br/>
-		<a href="index.jsp">Login Again</a>
+		<%--<a href="index.jsp">Login Again</a> --%>
+		<a href="ctl?page=index">Login Again</a>
 	</c:otherwise>
 </c:choose>
 

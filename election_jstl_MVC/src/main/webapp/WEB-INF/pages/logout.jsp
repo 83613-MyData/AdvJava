@@ -11,7 +11,8 @@
 <body>
 <h3>${initParam.appTitle}</h3>
 	Thank You, ${lb.user.firstName} ${lb.user.lastName} <hr/>
-	<a href="index.jsp">Login Again</a>
+	<%--<a href="index.jsp">Login Again</a> --%>
+	<a href="ctl?page=index">Login Again</a>
 
 
 </body>
